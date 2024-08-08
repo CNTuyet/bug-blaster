@@ -35,6 +35,11 @@ const ticketReducer = (state, action) => {
             return {
                 ...state, editingTicket: null
             };
+        case 'SET_SORTING':
+            return {
+                ...state,
+                sortPreference: action.sortMethod
+            };
         default:
             return state;
     }

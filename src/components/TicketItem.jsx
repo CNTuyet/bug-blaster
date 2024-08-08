@@ -9,7 +9,7 @@ const TicketItem = ({ ticket, dispatch }) => {
     };
     return (
         <div className='ticket-item'>
-            <div className={`ticket-dot ${priorityClass[priority]}`}></div>
+            <div className={`priority-dot ${priorityClass[priority]}`}></div>
             <h3>{title}</h3>
             <p>{description}</p>
             <button
