@@ -89,6 +89,11 @@ const TicketForm = ({ dispatch, editingTicket }) => {
             <button type='submit' className='button'>
                 Submit
             </button>
+            {editingTicket && (
+                <button className='button' onClick={() => dispatch({ type: 'CLEAR_EDITING_TICKET' })}>
+                    Cancel Edit
+                </button>
+            )}
         </form>
     )
 }
